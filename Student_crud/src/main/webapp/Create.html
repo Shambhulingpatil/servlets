@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<center>
+<h1>Enter Student details </h1>
+<form action="insert" method="post">
+<table>
+<tr>
+<th>Name :</th>
+<th><input type="text" placeholder="Enter the name" name="name"></th>
+</tr>
+
+<tr>
+<th>Mobile :</th>
+<th><input type="tel" placeholder="Enter the Number" name="mobile" pattern="{0-9}[10]"></th>
+</tr>
+
+<tr>
+<th>Email :</th>
+<th><input type="email" placeholder="Enter the EmailId" name="email"></th>
+</tr>
+
+<tr>
+<th>Gender :</th>
+<th><input type="radio" name="gender" value="male">Male
+<input type="radio" name="gender" value="female">Female</th>
+</tr>
+
+<tr>
+<th>DOB :</th>
+<th><input type="date" name="dob"></th>
+</tr>
+
+<tr>
+<th>Address :</th>
+<th><textarea rows="5" cols="23" name="address"></textarea></th>
+</tr>
+
+<tr>
+<th>Languages :</th>
+<th>
+<input type="checkbox"  name="language" value="kannada">Kannada
+<input type="checkbox"  name="language" value="english">English
+<input type="checkbox"  name="language" value="hindi">Hindi
+<input type="checkbox"  name="language" value="tamil">Tamil
+<input type="checkbox"  name="language" value="telagu">Telagu
+</th>
+</tr>
+
+<tr>
+<th>State :</th>
+<th>
+<select name="state">
+<option>Karnataka</option>
+<option>Andra</option>
+<option>Telangana</option>
+</select>
+</th>
+</tr>
+<tr>
+<td>
+<button>Submit</button>
+</td><br>
+<br>
+
+<td>
+<button>Cancel</button>
+</td>
+</tr>
+
+</table>
+</form>
+<br>
+<br>
+<a href="Home.html"><button> Home </button></a>
+</center>
+</body>
+</html>
