@@ -1,11 +1,13 @@
 package dto;
 
 import java.sql.Date;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 
 //import lombok.Data;
@@ -86,5 +88,13 @@ public class User {
 	Date dob;
 	int age;
 	double wallet;
+	@OneToMany
+	List<TrainTicket> tickets;
+	public List<TrainTicket> getTickets() {
+		return tickets;
+	}
+	public void setTickets(List<TrainTicket> tickets) {
+		this.tickets = tickets;
+	}
 
 }
